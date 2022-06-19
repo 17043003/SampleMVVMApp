@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:text="@{view_model.newsLiveData.title}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +28,7 @@
             android:id="@+id/newsContentText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{view_model.newsLiveData.content}"
             app:layout_constraintEnd_toEndOf="@+id/newsText"
             app:layout_constraintTop_toBottomOf="@+id/newsText" />
 
